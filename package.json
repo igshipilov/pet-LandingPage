@@ -1,0 +1,27 @@
+{
+  "name": "workfiles",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "my work files",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx jest"
+  },
+  "bin": {},
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint-config-airbnb": "^19.0.4",
+    "core-js": "^3.32.2",
+    "lodash": "*"
+  },
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-jest": "^27.4.0",
+    "intelli-espower-loader": "^1.1.0",
+    "jest": "^29.7.0",
+    "mocha": "^10.2.0"
+  }
+}
