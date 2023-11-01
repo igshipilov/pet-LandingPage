@@ -1,24 +1,115 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
 
+:root {
+  --color-text: #FFF;
+  --color-main: #191919;
+  --color-accent: #118DA8;
+  --cards-color: #000;
+}
+
+* {
+  /* размер учитывается только по width и height,
+  не учитываются padding и margin*/
+  box-sizing: border-box;
+}
+
 body {
   font-family: "DM Sans";
-  color: #FFF;
-  background-color: #191919;
+  color: var(--color-text);
+  background-color: var(--color-main);
+
+  padding: 0 70px;
 }
 
 .block {
-  background-color: #000;
+  background-color: var(--cards-color);
 }
 
 .subtitle {
-  color: #118DA8;
+  color: var(--color-accent);
 }
 
-/* .category {
-  background-color: #191919;
-} */
+.category {
+  background-color: var(--color-main);
+}
 
+.episode {
+  background-color: var(--cards-color);
+}
 
 .card {
-  background-color: #000;
+  background-color: var(--cards-color);
+}
+
+.episode__episode_photo {
+  width: 389px;
+  height: 465px;
+}
+
+button {
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 27px;
+
+  border-radius: 6px;
+  border: none;
+
+  color: var(--color-text);
+  background-color: var(--color-accent);
+
+
+  /* width: 208px;
+  height: 51px; */
+
+  /* width: auto;
+  height: auto; */
+  
+  padding: 1em 1em;
+  letter-spacing: 0.075em;
+
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.top-menu ul {
+  display: flex;
+  list-style: none;
+  column-gap: 2.5em;
+
+}
+
+nav ul li a:hover {
+  color: var(--color-accent);
+
+  transform: scale(2);
+
+}
+
+.first-block {
+  display: flex;
+}
+
+.first-block__title {
+  padding: 300px 0 0 0;
+
+  font-size: 30px;
+}
+
+.first-block__content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 60px;
+  /* margin: 0 300px 0 0; */
+
+  flex-grow: 1;
+  align-content: center;
 }
