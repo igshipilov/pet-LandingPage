@@ -11,6 +11,8 @@
   /* размер учитывается только по width и height,
   не учитываются padding и margin*/
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -29,22 +31,80 @@ body {
   color: var(--color-accent);
 }
 
+
+
+/* .episodes {
+  display: flex;
+  flex-direction: column;
+} */
+
+.episodes__episode {
+  display: flex;
+  /* position: relative; */
+  align-items: center;
+  justify-content: space-around;
+
+  width: 1300px;
+  height: 545px;
+  margin-top: 60px;
+
+  border-radius: 32px;
+
+  background-color: var(--cards-color);
+}
+
+.image {
+  /* position: absolute;
+  left: 40px;
+  bottom: 40px;
+  top: 40px; */
+}
+
+.episode__content {
+  width: 778px;
+  height: 465px;
+  /* display: flex;
+  flex-direction: column; */
+  /* position: absolute;
+  right: 40px; */
+  
+}
+
 .category {
+
   background-color: var(--color-main);
 }
 
-.episode {
-  background-color: var(--cards-color);
+h2 {
+  font-size: 64px;
 }
 
-.card {
+.text-description {
+  color: rgba(255, 255, 255, 0.70);
+}
+
+
+
+
+/* .episode {
+  display: flex;
+
   background-color: var(--cards-color);
+  border-radius: 32px;
+  margin: 100px;
 }
 
 .episode__episode_photo {
   width: 389px;
   height: 465px;
+} */
+
+
+
+.card {
+  background-color: var(--cards-color);
 }
+
 
 button {
   cursor: pointer;
