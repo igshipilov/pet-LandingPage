@@ -1,4 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap'); */
+
+@font-face {
+  font-family: "DM Sans";
+  src: url('../src/files/fonts/DMSans_18pt-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../src/files/fonts/DMSans_18pt-Bold.ttf');
+  font-weight: 700;
+}
 
 :root {
   --color-text: #FFF;
@@ -11,17 +23,66 @@
   /* размер учитывается только по width и height,
   не учитываются padding и margin*/
   box-sizing: border-box;
+  
   padding: 0;
   margin: 0;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 43px;
+  margin-bottom: 83px;
+}
+
 body {
-  font-family: "DM Sans";
+  width: 1440px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
   color: var(--color-text);
   background-color: var(--color-main);
 
   padding: 0 70px;
+  margin: 0 auto;
 }
+
+.title {
+  font-size: 70px;
+}
+
+.listen-on {
+  font-size: 15px;
+  margin-top: 90px;
+  margin-bottom: 15px;
+  line-height: 24px;
+}
+
+.icon {
+  margin-right: 17px;
+}
+
+.line-between {
+  display: flex;
+  width: 1300px;
+  height: 99px;
+  flex-shrink: 0;
+  justify-content: space-between;
+
+  margin: 100px 0 40px;
+}
+
+.title-two {
+  font-size: 64px;
+  line-height: 70px;
+}
+
+
+.episodes .title-two {
+  letter-spacing: 2.56px;
+}
+
 
 .block {
   background-color: var(--cards-color);
@@ -33,10 +94,11 @@ body {
 
 
 
-/* .episodes {
+.episodes {
   display: flex;
   flex-direction: column;
-} */
+  justify-content: space-between;
+}
 
 .episodes__episode {
   display: flex;
@@ -71,8 +133,14 @@ body {
 }
 
 .category {
-
+  display: inline-block;
+  width: auto;
+  height: auto;
   background-color: var(--color-main);
+  border-radius: 6px;
+  line-height: 27px;
+  padding: 0 16px;
+
 }
 
 h2 {
@@ -109,7 +177,8 @@ h2 {
 button {
   cursor: pointer;
   font-size: 18px;
-  line-height: 27px;
+
+  height: 51px;
 
   border-radius: 6px;
   border: none;
@@ -117,23 +186,11 @@ button {
   color: var(--color-text);
   background-color: var(--color-accent);
 
-
-  /* width: 208px;
-  height: 51px; */
-
-  /* width: auto;
-  height: auto; */
-  
   padding: 1em 1em;
   letter-spacing: 0.075em;
-
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 
 nav ul li a {
   color: var(--color-text);
