@@ -63,7 +63,10 @@ body {
   margin-right: 17px;
 }
 
-.line-between {
+
+/* -------------------------- */
+
+.latest-episodes-head {
   display: flex;
   width: 1300px;
   height: 99px;
@@ -73,99 +76,132 @@ body {
   margin: 100px 0 40px;
 }
 
-.title-two {
-  font-size: 64px;
-  line-height: 70px;
-}
 
-
-.episodes .title-two {
-  letter-spacing: 2.56px;
-}
-
-
-.block {
-  background-color: var(--cards-color);
-}
-
-.subtitle {
-  color: var(--color-accent);
-}
-
-
-
+/* -------------------------- */
 .episodes {
+  width: 1300px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
 }
 
 .episodes__episode {
   display: flex;
-  /* position: relative; */
   align-items: center;
   justify-content: space-around;
 
   width: 1300px;
   height: 545px;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 
   border-radius: 32px;
-
   background-color: var(--cards-color);
 }
 
-.image {
-  /* position: absolute;
-  left: 40px;
-  bottom: 40px;
-  top: 40px; */
+.episodes__episode:nth-child(n + 2) {
+  height: 512px;
+}
+
+.episodes__episode:nth-child(n + 2) > .episode__content {
+  height: 432px;
+}
+
+.episodes__image {
+  margin-left: 10px;
 }
 
 .episode__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
   width: 778px;
   height: 465px;
-  /* display: flex;
-  flex-direction: column; */
-  /* position: absolute;
-  right: 40px; */
-  
+  /* height: auto; */
 }
 
+
 .category {
-  display: inline-block;
-  width: auto;
-  height: auto;
   background-color: var(--color-main);
   border-radius: 6px;
   line-height: 27px;
   padding: 0 16px;
+}
+
+.episode-number {
+  margin-top: 40px;
+  color: var(--color-accent);
+}
+
+.title-two {
+  font-size: 64px;
+  line-height: 70px;
+}
+
+.episodes .title-two {
+  margin-bottom: 18px;
+  letter-spacing: 2.56px;
+}
+
+.text-description {
+  margin-bottom: 18px;
+  font-size: 22px;
+  color: rgba(255, 255, 255, 0.70);
+}
+
+.block {
+  background-color: var(--cards-color);
+}
+
+
+
+
+
+/* -------------------------- */
+.person {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 160px 0;
+}
+
+.person__content {
+  width: 590px;
+  height: 448px;
+}
+
+
+
+.circle {
+  display: grid;
+  place-content: center;
+
+  width: 112px;
+  height: 112px;
+  border-radius: 400px;
+  background-color: var(--color-accent);
+}
+
+.arrow {
+  background: transparent;
 
 }
+
+.person__name {
+  font-size: 65px;
+}
+
+
+
+
+
+
 
 h2 {
   font-size: 64px;
 }
-
-.text-description {
-  color: rgba(255, 255, 255, 0.70);
-}
-
-
-
-
-/* .episode {
-  display: flex;
-
-  background-color: var(--cards-color);
-  border-radius: 32px;
-  margin: 100px;
-}
-
-.episode__episode_photo {
-  width: 389px;
-  height: 465px;
-} */
 
 
 
