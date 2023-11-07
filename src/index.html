@@ -27,15 +27,27 @@
       </header>
 
       <div class="first-block">
-        <div class="photo-main">
-          <!-- <img src="/src/files/svg/stuff/shur1.svg" alt="" class="shur1"> -->
+
+<!-- Оборачивание, картинка поверх контента:
+https://blog.logrocket.com/guide-image-overlays-css/ -->
+        <div class="image-wrapper">
+          <div class="shur_overlay shur1_overlay_offset">
+            <img src="/src/files/svg/stuff/shur1.svg" alt="shur1.svg">
+          </div>
           <img src="../src/files/imgs/photo1.png" alt="photo1" />
         </div>
+
         
         <div class="first-block__content">
-          <div class="first-block__title">
-            <p class="title">Take your podcast to the next <strong>level</strong></p>
+          <div class="image-wrapper">
+            <div class="shur_overlay shur2_overlay_offset ">
+              <img src="/src/files/svg/stuff/shur2.svg" alt="shur2.svg">
+            </div>
+            <div class="first-block__title">
+              <p class="title">Take your podcast to the next <strong>level</strong></p>
+            </div>
           </div>
+  
   
           <div class="first-block__audio-platforms">
             <p class="listen-on">Listen on</p>
@@ -151,9 +163,14 @@
 
 <!-- ====================================== -->
       <div class="subscribe">
-        <div class="subscribe__text">
-          <p class="small-accent">Email Newsletter</p>
-          <p class="subscribe__title">Subscribe <br /> for updates</p>
+        <div class="image-wrapper">
+          <div class="shur_overlay shur3_overlay_offset">
+            <img src="/src/files/svg/stuff/shur3.svg" alt="shur1.svg">
+          </div>
+          <div class="subscribe__text">
+            <p class="small-accent">Email Newsletter</p>
+            <p class="subscribe__title">Subscribe <br /> for updates</p>
+          </div>
         </div>
 
           <form class="subscribe__form">

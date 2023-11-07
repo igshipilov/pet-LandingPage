@@ -51,6 +51,7 @@ body {
 
 .title {
   font-size: 70px;
+  letter-spacing: 3.2px;
 }
 
 .listen-on {
@@ -150,6 +151,8 @@ body {
   margin-bottom: 18px;
   font-size: 22px;
   color: var(--color-subtext);
+
+  line-height: 33px;
 }
 
 .block {
@@ -190,6 +193,10 @@ body {
 
 .person__name {
   font-size: 65px;
+  line-height: 79px;
+  letter-spacing: 2.9px;
+
+  margin-bottom: 25px;
 }
 
 
@@ -205,6 +212,7 @@ body {
 
   background-color: var(--cards-color);
   border-radius: 32px;
+
 }
 
 .subscribe__text {
@@ -266,6 +274,8 @@ input {
   flex-wrap: wrap;
 
   gap: 15px;
+
+  margin-top: 150px;
 }
 
 .rating-cards__card {
@@ -318,6 +328,11 @@ input {
 
 
 /* -------------------------- */
+footer {
+  height: 350px;
+  margin-top: 200px;
+}
+
 .footer__container {
   display: flex;
   /* justify-content: space-between; */
@@ -351,9 +366,7 @@ input {
 
   width: 180px;
   gap: 10px;
-}
 
-.footer__container > div > nav > ul > li {
   line-height: 27px;
 }
 
@@ -374,7 +387,6 @@ h2 {
 
 ul {
   list-style-type: none;
-
 }
 
 .card {
@@ -411,27 +423,39 @@ button {
 
 .top-menu ul {
   display: flex;
-  list-style: none;
   column-gap: 2.5em;
 
 }
-
-
 
 .first-block {
   display: flex;
 }
 
-
-.shur1 {
+.image-wrapper {
   position: relative;
-  left: 40px;
-  top: -30px;
+}
+
+.shur_overlay {
+  position: absolute;
+}
+
+.shur1_overlay_offset {
+  left: -27px;
+  top: -27px;
+}
+
+.shur2_overlay_offset {
+  left: 0;
+  top: 560px;
+}
+
+.shur3_overlay_offset {
+  left: -135px;
+  top: 300px;
 }
 
 .first-block__title {
   padding: 300px 0 0 0;
-
   font-size: 30px;
 }
 
@@ -440,7 +464,6 @@ button {
   flex-direction: column;
   padding: 0 60px;
   width: 530px;
-  /* margin: 0 300px 0 0; */
 
   flex-grow: 1;
   align-content: center;
