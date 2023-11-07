@@ -11,7 +11,7 @@
 
       <header>
         <div class="logo">
-          <img src="../src/files/svg/stuff/logo.svg" alt="logo" />
+          <a href="#"><img src="../src/files/svg/stuff/logo.svg" alt="logo" /></a>
         </div>
   
         <div class="menu">
@@ -27,11 +27,14 @@
       </header>
 
       <div class="first-block">
-        <img src="../src/files/imgs/photo1.png" alt="photo1" />
+        <div class="photo-main">
+          <!-- <img src="/src/files/svg/stuff/shur1.svg" alt="" class="shur1"> -->
+          <img src="../src/files/imgs/photo1.png" alt="photo1" />
+        </div>
         
         <div class="first-block__content">
           <div class="first-block__title">
-            <p class="title">Take your<br />podcast to the<br />next <strong>level</strong></p>
+            <p class="title">Take your podcast to the next <strong>level</strong></p>
           </div>
   
           <div class="first-block__audio-platforms">
@@ -65,7 +68,7 @@
 
           <div class="episode__content">
             <div class="category">Gear</div>
-            <p class="episode-number">Episode 3</p>
+            <p class="small-accent">Episode 3</p>
             <p class="title-two">Should you get <br />outboard audio gear?</p>
             <p class="text-description">
               Is hardware really worth it when it comes to podcasting? The answer
@@ -87,7 +90,7 @@
 
           <div class="episode__content">
             <div class="category">Tips & Tricks</div>
-            <p class="episode-number">Episode 2</p>
+            <p class="small-accent">Episode 2</p>
             <p class="title-two">Mic tricks to take<br />you to the next level</p>
             <p class="text-description">
               Stop rolling with those default settings on your mic. These small tweaks<br />
@@ -107,7 +110,7 @@
 
           <div class="episode__content">
             <div class="category">Gear</div>
-            <p class="episode-number">Episode 1</p>
+            <p class="small-accent">Episode 1</p>
             <p class="title-two">The best microphone<br />under $200</p>
             <p class="text-description">
               With so many microphones on the market, how are you supposed to know<br />
@@ -125,11 +128,11 @@
 <!-- ====================================== -->
       <div class="person">
         <div class="person__content">
-          <div class="circle">
+          <a href=""><div class="circle">
             <div class="arrow"></div>
             <img src="/src/files/imgs/arrow.png" width="75" height="45" alt="arrow" >
-          </div>
-          <p class="episode-number">Meet your host</p>
+          </div></a>
+          <p class="small-accent">Meet your host</p>
           <p class="person__name">Jacob Paulaner</p>
           <p class="text-description">
             Jacob has a background in audio engineering, and has been podcasting
@@ -148,48 +151,97 @@
 
 <!-- ====================================== -->
       <div class="subscribe">
-        <p class="subtitle">Email Newsletter</p>
-        <h2>Subscribe for updates</h2>
-        <label> <input type="text" />Name </label>
+        <div class="subscribe__text">
+          <p class="small-accent">Email Newsletter</p>
+          <p class="subscribe__title">Subscribe <br /> for updates</p>
+        </div>
 
-        <label> <input type="text" />Email </label>
+          <form class="subscribe__form">
+            <label class="sr-only"> Name
+            </label>
+            <input id="name" type="text" placeholder="Name" />
 
-        <button>Submit</button>
+            <label class="sr-only"> Email
+            </label>
+            <input id="name" type="text" placeholder="Email" />
+
+            <button>Submit</button>
+          </form>
+
       </div>
 
+
+
+<!-- ====================================== -->
       <div class="rating-cards">
-        <div class="card">
-          <section class="stars"></section>
+        <div class="rating-cards__card">
+          <div class="stars">
+            <img src="/src/files/svg/stuff/star.svg" alt="star" class="star">
+            <img src="/src/files/svg/stuff/star.svg" alt="star" class="star">
+            <img src="/src/files/svg/stuff/star.svg" alt="star" class="star">
+            <img src="/src/files/svg/stuff/star.svg" alt="star" class="star">
+            <img src="/src/files/svg/stuff/star.svg" alt="star" class="star">
+          </div>
           <p class="comment">I can’t recommend this podcast enough</p>
           <p class="author">Betty Lacey</p>
         </div>
 
-        <div class="card">
-          <section class="stars"></section>
+        <div class="rating-cards__card">
+          <div class="stars">
+            <img src="/src/files/svg/stuff/star.svg" alt="star" class="star">
+            <img src="/src/files/svg/stuff/star.svg" alt="star" class="star">
+            <img src="/src/files/svg/stuff/star.svg" alt="star" class="star">
+            <img src="/src/files/svg/stuff/star.svg" alt="star" class="star">
+            <img src="/src/files/svg/stuff/star.svg" alt="star" class="star">
+          </div>
           <p class="comment">Jacob is the best in the business</p>
           <p class="author">Adam Driver</p>
         </div>
 
-        <div class="card">
-          <section class="stars"></section>
+        <div class="rating-cards__card">
+          <div class="stars">
+            <img src="/src/files/svg/stuff/star.svg" alt="star" class="star">
+            <img src="/src/files/svg/stuff/star.svg" alt="star" class="star">
+            <img src="/src/files/svg/stuff/star.svg" alt="star" class="star">
+            <img src="/src/files/svg/stuff/star.svg" alt="star" class="star">
+            <img src="/src/files/svg/stuff/star.svg" alt="star" class="star">
+          </div>
           <p class="comment">A wealth of audio knowledge</p>
           <p class="author">Marcus Brown</p>
         </div>
 
-        <div class="card">
-          <section class="stars"></section>
+        <div class="rating-cards__card">
+          <div class="stars">
+            <img src="/src/files/svg/stuff/star.svg" alt="star" class="star">
+            <img src="/src/files/svg/stuff/star.svg" alt="star" class="star">
+            <img src="/src/files/svg/stuff/star.svg" alt="star" class="star">
+            <img src="/src/files/svg/stuff/star.svg" alt="star" class="star">
+            <img src="/src/files/svg/stuff/star.svg" alt="star" class="star">
+          </div>
           <p class="comment">Every episode is a gem!</p>
           <p class="author">Jessica Knowl</p>
         </div>
 
-        <div class="card">
-          <section class="stars"></section>
+        <div class="rating-cards__card">
+          <div class="stars">
+            <img src="/src/files/svg/stuff/star.svg" alt="star" class="star">
+            <img src="/src/files/svg/stuff/star.svg" alt="star" class="star">
+            <img src="/src/files/svg/stuff/star.svg" alt="star" class="star">
+            <img src="/src/files/svg/stuff/star.svg" alt="star" class="star">
+            <img src="/src/files/svg/stuff/star.svg" alt="star" class="star">
+          </div>
           <p class="comment">Whoa whoa, let me take some notes!</p>
-          <p class="author">Scott Adams/p></p>
+          <p class="author">Scott Adams</p>
         </div>
 
-        <div class="card">
-          <section class="stars"></section>
+        <div class="rating-cards__card">
+          <div class="stars">
+            <img src="/src/files/svg/stuff/star.svg" alt="star" class="star">
+            <img src="/src/files/svg/stuff/star.svg" alt="star" class="star">
+            <img src="/src/files/svg/stuff/star.svg" alt="star" class="star">
+            <img src="/src/files/svg/stuff/star.svg" alt="star" class="star">
+            <img src="/src/files/svg/stuff/star.svg" alt="star" class="star">
+          </div>
           <p class="comment">
             I’ve upped my game considerably since I started listening
           </p>
@@ -197,46 +249,55 @@
         </div>
       </div>
     </main>
+
+
+
+<!-- ====================================== -->
     <footer>
-      <div class="logo">
-        <img src="../src/files/svg/stuff/logo.svg" alt="logo" />
+      <div class="footer__container">
+        <div class="logo-n-social">
+          <div class="logo">
+            <a href=""><img src="../src/files/svg/stuff/logo.svg" alt="logo" /></a>
+          </div>
+    
+          <div class="social-media">
+            <a href="#"><img src="../src/files/svg/social-media/insta.svg" alt="insta" /></a>
+            <a href="#"><img src="../src/files/svg/social-media/twitter.svg" alt="Twitter" /></a>
+            <a href="#"><img src="../src/files/svg/social-media/fb.svg" alt="Facebook" /></a>
+          </div>
+        </div>
+
+        <div class="menu">
+          <div class="bottom-list">
+              <p><a href="#">Home</a></p>
+              <p><a href="#">Episodes</a></p>
+              <p><a href="#">About</a></p>
+              <p><a href="#">Contact</a></p>
+          </div>
+        </div>
+  
+        <div class="menu">
+          <div class="bottom-list">
+              <p><a href="#">Style Guide</a></p>
+              <p><a href="#">Instructions</a></p>
+              <p><a href="#">Changelog</a></p>
+              <p><a href="#">Credit</a></p>
+              <p><a href="#">Powered by Webflow</a></p>
+              <p><a href="#">Licenses</a></p>
+          </div>
+        </div>
+  
+        <div class="audio-platforms">
+          <a href="#"><img src="../src/files/svg/music/1-spotify.svg" alt="spotify" /></a>
+          <a href="#"><img src="../src/files/svg/music/2-red.svg" alt="wtf1" /></a>
+          <a href="#"><img src="../src/files/svg/music/3-soundcloud.svg" alt="soundCloud" /></a>
+          <a href="#"><img src="../src/files/svg/music/4-purple.svg" alt="wtf2" /></a>
+          <a href="#"><img src="../src/files/svg/music/5-orange.svg" alt="wtf3" /></a>
+        </div>
+
       </div>
 
-      <div class="social-media">
-        <img src="../src/files/svg/social-media/insta.svg" alt="insta" />
-        <img src="../src/files/svg/social-media/twitter.svg" alt="Twitter" />
-        <img src="../src/files/svg/social-media/fb.svg" alt="Facebook" />
-      </div>
-
-      <div class="menu">
-        <nav class="bottom-menu">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Episodes</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="outer-links">
-        <nav>
-          <li>Style Guide</li>
-          <li>Instructions</li>
-          <li>Changelog</li>
-          <li>Credit</li>
-          <li>Powered by Webflow</li>
-          <li>Licenses</li>
-        </nav>
-      </div>
-
-      <div class="audio-platforms">
-        <img src="../src/files/svg/music/1-spotify.svg" alt="spotify" />
-        <img src="../src/files/svg/music/2-red.svg" alt="wtf1" />
-        <img src="../src/files/svg/music/3-soundcloud.svg" alt="soundCloud" />
-        <img src="../src/files/svg/music/4-purple.svg" alt="wtf2" />
-        <img src="../src/files/svg/music/5-orange.svg" alt="wtf3" />
-      </div>
     </footer>
+
   </body>
 </html>
